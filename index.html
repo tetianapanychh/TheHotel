@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Main page</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230824133241">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">The hotel</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a data-goto=".about" data-goto-header href="#" class="menu__link">About</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".rooms" data-goto-header href="#" class="menu__link">Rooms</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".facilities" data-goto-header href="#" class="menu__link">Facilities</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".gallery" data-goto-header href="#" class="menu__link">Gallery</a>
+							</li>
+							<li class="menu__item">
+								<a data-goto=".contacts" data-goto-header href="#" class="menu__link">Contacts</a>
+							</li>
+						</ul>
+						<ul class="menu__social social">
+							<li class="social__item">
+								<a href="#" class="social__link">Facebook</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link">Instagram</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link">Twitter</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<a data-da=".menu__body, 991.92, 1" href="tel:+380670000000" class="header__number">+38 067 000 00 00</a>
+				<button aria-label="Button of menu" type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__top top-hero">
+						<div class="top-hero__title-block animation animation_down">
+							<h1 class="top-hero__title">The <span>Hotel</span></h1>
+							<ul class="top-hero__facilities ">
+								<li class="top-hero__facility-item">Rooms</li>
+								<li class="top-hero__facility-item">Restaurant</li>
+								<li class="top-hero__facility-item">Congress hall</li>
+								<li class="top-hero__facility-item">Wine bar</li>
+							</ul>
+						</div>
+						<div class="top-hero__content">
+							<div class="top-hero__labels animation animation_down">
+								<div class="top-hero__year year-block">
+									Since 1993
+								</div>
+								<button aria-label="Scroll to the Book room" data-goto=".hero__image-block" data-goto-header type="button" class="top-hero__arrow-down octagon _icon-arrow-down">
+									<svg width="70" height="70" viewBox="0 0 192 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.32" d="M37.5305 19.5236L96 0.525732L154.47 19.5236L190.606 69.2608V130.739L154.469 180.476L96 199.474L37.5305 180.476L1.39435 130.739V69.2608L37.5305 19.5236Z" stroke="#FFFCF6" />
+									</svg>
+								</button>
+							</div>
+							<div data-da=".top-hero__labels, 1200" class="top-hero__text text animation animation_down">
+								<p>
+									The luxurious hotel in the most beautiful european city with an exclusive restaurant,
+									conference-hall, and art-bar.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero__image-block animation animation_down anim-no-hide">
+						<picture><source srcset="img/homepage/hero/main-image.webp" type="image/webp"><img src="img/homepage/hero/main-image.jpg" alt="Photo of the interior"></picture>
+						<div class="hero__book-block book-block">
+							<button data-popup="#book-room" class="book-block__button book-button octagon octagon_solid ">
+								<svg width="120" height="120" viewBox="0 0 192 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M96 0L154.779 19.0983L191.106 69.0983V130.902L154.779 180.902L96 200L37.2215 180.902L0.894348 130.902V69.0983L37.2215 19.0983L96 0Z" fill="#FCD043" />
+								</svg>
+								<span class="octagon__text">Book room</span>
+							</button>
+							<form data-dev data-popup-message="#book-info" action="#" class="book-block__form form-book-room">
+								<div class="book-block__item form-book-room__item">
+									<input data-datepicker readonly id="1" data-required autocomplete="off" type="text" name="form[]" placeholder="Check in" class="book-block__input input input_book check-in1">
+								</div>
+								<div class="book-block__item form-book-room__item">
+									<input data-datepicker readonly id="1" data-required autocomplete="off" type="text" name="form[]" placeholder="Check out" class="book-block__input input input_book check-out1">
+								</div>
+								<button type="submit" class="book-block__submit">Book room</button>
+							</form>
+						</div>
+					</div>
+					<div class="hero__bottom bottom-hero">
+						<div class="bottom-hero__contacts animation animation_down">
+							<a href="tel:+380670000000" class="bottom-hero__number">+38 067 000 00 00</a>
+							<a data-da=".menu__body, 991.98, 1" href="#" class="bottom-hero__address">8 Danyla Halytskogo,
+								Lviv</a>
+						</div>
+						<div class="bottom-hero__text animation animation_down">Art & Congress hall</div>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="page__about about">
+				<div class="about__container">
+					<div class="about__content">
+						<h2 class="about__title title animation animation_down"><span>About</span> <br>Us</h2>
+						<div class="about__text-block">
+							<div class="about__subtitle animation animation_down">High Quality</div>
+							<div class="about__text text animation animation_down">
+								<p>
+									The five-star Hotel was reopened to visitors in 2016. The building was renovated and
+									modernized to meet the expectations of the most demanding guests. We offer luxurious rooms,
+									numerous facilities, and exceptional service.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="about__main-image-ibg animation animation_left anim-no-hide">
+						<picture><source srcset="img/homepage/about/main-image.webp" type="image/webp"><img src="img/homepage/about/main-image.jpg" alt="Image of interior"></picture>
+					</div>
+					<div class="about__image-block animation animation_right anim-no-hide">
+						<div class="about__circular-text text-circle text-circular-about">
+							<div class="text-circle__text">
+								<p>The hotel. Premium rooms</p>
+							</div>
+							<div class="text-circle__icon">
+								<img src="img/homepage/about/icon.svg" alt="Icon">
+							</div>
+						</div>
+						<picture><source srcset="img/homepage/about/small-image.webp" type="image/webp"><img src="img/homepage/about/small-image.jpg" alt="Image of interior"></picture>
+						<button type="button" aria-label="Scroll to the next section" data-goto=".rooms" class="about__scroll-down octagon octagon_border">
+							<svg width="150" height="150" viewBox="0 0 192 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.32" d="M37.5305 19.5236L96 0.525732L154.47 19.5236L190.606 69.2608V130.739L154.469 180.476L96 199.474L37.5305 180.476L1.39435 130.739V69.2608L37.5305 19.5236Z" stroke="#FFFCF6" />
+							</svg>
+							<span class="octagon__text _icon-arrow-down">Rooms<br>and<br>apartments</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section id="rooms" class="page__rooms rooms">
+				<div class="rooms__container">
+					<div class="rooms__top">
+						<h2 class="rooms__title title animation animation_left">Rooms & apartments</h2>
+						<div class="rooms__text-block animation animation_right">
+							<p>All room decoration was made with ecological certified and safe materials.</p>
+						</div>
+					</div>
+					<div class="rooms__body">
+						<div class="rooms__nav">
+							<div class="rooms__image">
+								<picture><source srcset="img/homepage/rooms/small-image.webp" type="image/webp"><img src="img/homepage/rooms/small-image.jpg" alt="Image of interior"></picture>
+							</div>
+							<div data-da=".rooms__text-block, 767.98, 0" class="rooms__buttons">
+								<button aria-label="Button to previous slide" class="rooms__button rooms__button_prev octagon octagon_border octagon_icon _icon-arrow">
+									<svg width="80" height="80" viewBox="0 0 170 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.48" d="M16.6589 130.653L0.525728 81L16.6589 31.3473L58.896 0.660245L111.104 0.660243L153.341 31.3473L169.474 81L153.341 130.653L111.104 161.34L58.896 161.34L16.6589 130.653Z" stroke="#313F38" />
+									</svg>
+								</button>
+								<button aria-label="Button to next slide" class="rooms__button rooms__button_next octagon octagon_border octagon_icon _icon-arrow">
+									<svg width="80" height="80" viewBox="0 0 170 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.48" d="M16.6589 130.653L0.525728 81L16.6589 31.3473L58.896 0.660245L111.104 0.660243L153.341 31.3473L169.474 81L153.341 130.653L111.104 161.34L58.896 161.34L16.6589 130.653Z" stroke="#313F38" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="rooms__slider slider-rooms swiper">
+							<div class="slider-rooms__wrapper swiper-wrapper">
+								<div class="slider-rooms__slide swiper-slide">
+									<div class="slider-rooms__content">
+										<div class="slider-rooms__year year-block">
+											Since 1993
+										</div>
+										<div class="slider-rooms__text-block">
+											<div class="slider-rooms__title animation animation_down">
+												<a class="slider-rooms__title-link title" href="room.html">Superior twin</a>
+											</div>
+											<div class="slider-rooms__text text text_dark animation animation_down">
+												<p>
+													The Superior twin is perfect for those who plan to stay long. The spacious and
+													bright room is equipped with deluxe Italian furniture and has a beautiful view to
+													the historical part of the city. Stylish interior design and comfortable beds
+													will make your stay cozy and pleasant.
+												</p>
+											</div>
+										</div>
+									</div>
+									<a href="room.html" class="slider-rooms__image-block-ibg">
+										<picture><source srcset="img/homepage/rooms/superioi-twin-image.webp" type="image/webp"><img src="img/homepage/rooms/superioi-twin-image.jpg" alt="Image of Superior Twin room"></picture>
+										<button data-popup="#book-room" class="slider-rooms__button book-button octagon octagon_solid animation animation_down">
+											<svg width="120" height="120" viewBox="0 0 192 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M96 0L154.779 19.0983L191.106 69.0983V130.902L154.779 180.902L96 200L37.2215 180.902L0.894348 130.902V69.0983L37.2215 19.0983L96 0Z" fill="#FCD043" />
+											</svg>
+											<span class="octagon__text">Book room</span>
+										</button>
+									</a>
+								</div>
+								<div class="slider-rooms__slide swiper-slide">
+									<div class="slider-rooms__content">
+										<div class="slider-rooms__year year-block">
+											Since 1993
+										</div>
+										<div class="slider-rooms__text-block">
+											<div class="slider-rooms__title animation animation_down">
+												<a class="slider-rooms__title-link title" href="room.html">Premier</a>
+											</div>
+											<div class="slider-rooms__text text text_dark animation animation_down">
+												<p>
+													The Premier consists of two functional zones: a cozy bedroom with Italian
+													furniture by B & B Italia, Giorgetti, a pillow menu for choosing the most
+													comfortable sleeping option and a living room with a set of soft furniture for
+													meeting guests or running business negotiations with partners.
+												</p>
+											</div>
+										</div>
+									</div>
+									<a href="room.html" class="slider-rooms__image-block-ibg">
+										<picture><source srcset="img/homepage/rooms/premier-image.webp" type="image/webp"><img src="img/homepage/rooms/premier-image.jpg" alt="Image of Premier room"></picture>
+										<button data-popup="#book-room" class="slider-rooms__button book-button octagon octagon_solid animation animation_down">
+											<svg width="120" height="120" viewBox="0 0 192 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M96 0L154.779 19.0983L191.106 69.0983V130.902L154.779 180.902L96 200L37.2215 180.902L0.894348 130.902V69.0983L37.2215 19.0983L96 0Z" fill="#FCD043" />
+											</svg>
+											<span class="octagon__text">Book room</span>
+										</button>
+									</a>
+								</div>
+								<div class="slider-rooms__slide swiper-slide">
+									<div class="slider-rooms__content">
+										<div class="slider-rooms__year year-block">
+											Since 1993
+										</div>
+										<div class="slider-rooms__text-block">
+											<div class="slider-rooms__title animation animation_down">
+												<a class="slider-rooms__title-link title" href="room.html">Superior twin</a>
+											</div>
+											<div class="slider-rooms__text text text_dark animation animation_down">
+												<p>
+													The Superior twin is perfect for those who plan to stay long. The spacious and
+													bright room is equipped with deluxe Italian furniture and has a beautiful view to
+													the historical part of the city. Stylish interior design and comfortable beds
+													will make your stay cozy and pleasant.
+												</p>
+											</div>
+										</div>
+									</div>
+									<a href="room.html" class="slider-rooms__image-block-ibg">
+										<picture><source srcset="img/homepage/rooms/superioi-twin-image.webp" type="image/webp"><img src="img/homepage/rooms/superioi-twin-image.jpg" alt="Image of Superior room"></picture>
+										<button data-popup="#book-room" class="slider-rooms__button book-button octagon octagon_solid animation animation_down">
+											<svg width="120" height="120" viewBox="0 0 192 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M96 0L154.779 19.0983L191.106 69.0983V130.902L154.779 180.902L96 200L37.2215 180.902L0.894348 130.902V69.0983L37.2215 19.0983L96 0Z" fill="#FCD043" />
+											</svg>
+											<span class="octagon__text">Book room</span>
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="facilities" class="page__facilities facilities">
+				<div class="facilities__container">
+					<div class="facilities__about about-facilities">
+						<div data-da=".about-facilities__content, 767.98, 1" class="about-facilities__image-block about-facilities__image-block_1">
+							<div data-da=".about-facilities__image-block_2, 991.98" class="about-facilities__label">Art &
+								congress hall</div>
+							<picture><source srcset="img/homepage/facilities/facility-1.webp" type="image/webp"><img src="img/homepage/facilities/facility-1.jpg" alt="Image of kitchen"></picture>
+						</div>
+						<div class="about-facilities__content">
+							<h2 class="about-facilities__title title animation">
+								<span>Our</span>
+								<span>Faci</span>
+								<span><img src="img/homepage/facilities/star.svg" alt="Icon Star">
+									lities
+								</span>
+							</h2>
+							<div class="about-facilities__text text text_dark animation animation_down">
+								<p>
+									The Hotel offers you a wide range of additional services and facilities. Visit our restaurant
+									to try exclusive meals, book a conference hall to organize a business meeting, or relax in
+									the art-bar.
+								</p>
+							</div>
+						</div>
+						<div class="about-facilities__image-block about-facilities__image-block_2">
+							<div class="about-facilities__circular-text text-circle">
+								<div class="text-circle__text">
+									<p>
+										The hotel. Premium rooms
+									</p>
+								</div>
+							</div>
+							<picture><source srcset="img/homepage/facilities/facility-2.webp" type="image/webp"><img src="img/homepage/facilities/facility-2.jpg" alt="Image of bar"></picture>
+						</div>
+					</div>
+					<div class="facilities__items">
+						<div class="facilities__item item-facility-big">
+							<div class="item-facility-big__content">
+								<div class="item-facility-big__number animation animation_down">
+									01
+								</div>
+								<div class="item-facility-big__text-block">
+									<h3 class="item-facility-big__title animation animation_down">
+										<a href="facility.html" class="item-facility-big__title-link title title_small">"Safe"
+											<br>
+											restaurant</a>
+									</h3>
+									<div class="item-facility-big__text text text_dark animation animation_down">
+										<p>
+											The hotel’s exclusive infrastructure is complemented by the unique atmosphere of the
+											Safe Restaurant. Author’s menu, extensive wine card, and live music will set you for
+											the correct mood.
+										</p>
+									</div>
+								</div>
+							</div>
+							<a href="facility.html" class="item-facility-big__image-ibg">
+								<picture><source srcset="img/homepage/facilities/restaurant.webp" type="image/webp"><img src="img/homepage/facilities/restaurant.jpg" alt="Image of restaurant"></picture>
+							</a>
+						</div>
+						<div class="facilities__item item-facility item-facility_2 animation animation_down">
+							<a href="facility.html" class="item-facility__image-ibg">
+								<picture><source srcset="img/homepage/facilities/hall.webp" type="image/webp"><img src="img/homepage/facilities/hall.jpg" alt="Image of conference hall"></picture>
+							</a>
+							<div class="item-facility__content">
+								<div data-da=".item-facility_2, 767.98, 0" class="item-facility__number">02</div>
+								<h3 class="item-facility__title">
+									<a href="facility.html" class="item-facility__title-link title title_small">Conference
+										hall</a>
+								</h3>
+							</div>
+							<a aria-label="Link to page about Conference hall" href="facility.html" class="item-facility__link _icon-arrow"></a>
+						</div>
+						<div class="facilities__item item-facility item-facility_3 animation animation_down">
+							<a href="facility.html" class="item-facility__image-ibg">
+								<picture><source srcset="img/homepage/facilities/bar.webp" type="image/webp"><img src="img/homepage/facilities/bar.jpg" alt="Image of conference hall"></picture>
+							</a>
+							<div class="item-facility__content">
+								<div data-da=".item-facility_3, 767.98, 0" class="item-facility__number">03</div>
+								<h3 class="item-facility__title">
+									<a href="facility.html" class="item-facility__title-link title title_small">Wine Bar
+										“Reserve”</a>
+								</h3>
+							</div>
+							<a aria-label="Link to page about Wine bar" href="facility.html" class="item-facility__link _icon-arrow"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__best best">
+				<div class="best__container">
+					<picture><source srcset="img/homepage/best/bg-image.webp" type="image/webp"><img src="img/homepage/best/bg-image.jpg" alt="Image of interior" class="best__image"></picture>
+					<div class="best__body body-best">
+						<h2 class="body-best__title title">Best apartments</h2>
+						<div class="body-best__text">
+							All room decoration was made with ecological certified and safe materials.
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="gallery" class="page__gallery gallery">
+				<div class="gallery__container">
+					<div class="gallery__body">
+						<div class="gallery__circular-text text-circle animation animation_down">
+							<div class="text-circle__icon">
+								<img src="img/homepage/about/icon.svg" alt="Icon">
+							</div>
+							<div class="text-circle__text">
+								<p>The hotel. Premium rooms</p>
+							</div>
+						</div>
+						<h2 class="gallery__title title animation animation_down">Our gallery</h2>
+						<div class="gallery__text text animation animation_down">
+							<p>
+								Explore our spacious rooms with the gorgeous view to the historical part of the city. Each room
+								has an exclusive interior design decorated with modern art pieces that will make your stay
+								unforgettable.
+							</p>
+						</div>
+						<div class="gallery__image-main animation animation_down anim-no-hide">
+							<picture><source srcset="img/homepage/gallery/main-image.webp" type="image/webp"><img src="img/homepage/gallery/main-image.jpg" alt="Main image of interior"></picture>
+						</div>
+						<div class="gallery__label animation animation_down anim-no-hide">
+							<img src="img/homepage/gallery/octagon.svg" alt="Icon">
+							<p>It is our pleasure to meet your most unrealistic expectations.</p>
+						</div>
+						<div class="gallery__image-small gallery__image-small_1 animation animation_down anim-no-hide">
+							<picture><source srcset="img/homepage/gallery/01.webp" type="image/webp"><img src="img/homepage/gallery/01.jpg" alt="Image of interior"></picture>
+						</div>
+						<div class="gallery__image-small gallery__image-small_2 animation animation_down anim-no-hide">
+							<picture><source srcset="img/homepage/gallery/02.webp" type="image/webp"><img src="img/homepage/gallery/02.jpg" alt="Image of interior"></picture>
+						</div>
+						<div class="gallery__image-small gallery__image-small_3 animation animation_down anim-no-hide">
+							<picture><source srcset="img/homepage/gallery/03.webp" type="image/webp"><img src="img/homepage/gallery/03.jpg" alt="Image of interior"></picture>
+						</div>
+						<div class="gallery__image-small gallery__image-small_4 animation animation_down anim-no-hide">
+							<picture><source srcset="img/homepage/gallery/04.webp" type="image/webp"><img src="img/homepage/gallery/04.jpg" alt="Image of interior"></picture>
+						</div>
+					</div>
+					<div class="gallery__line">
+						<div class="gallery__slider swiper gallery__slider_1">
+							<div class="gallery__wrapper swiper-wrapper">
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+							</div>
+						</div>
+						<div class="gallery__slider swiper gallery__slider_2">
+							<div class="gallery__wrapper swiper-wrapper">
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+								<div class="gallery__slide swiper-slide">The Hotel©</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__top">
+						<a href="tel:+380670000000" class="contacts__number animation animation_left">+38 067 000 00 00</a>
+						<a href="#" class="contacts__address animation animation_right">8 Danyla Halytskogo,
+							Lviv</a>
+					</div>
+					<div class="contacts__body">
+						<h2 class="contacts__title-block title title_big animation anim-no-hide">
+							<span>Get in <img src="img/homepage/contact/star.svg" alt="Icon Star"></span>
+							<span>Touch</span>
+						</h2>
+						<picture><source srcset="img/homepage/contact/image.webp" type="image/webp"><img src="img/homepage/contact/image.jpg" alt="Image of furniture" class="contacts__image-small animation animation_right anim-no-hide"></picture>
+					</div>
+					<div class="contacts__form-block animation animation_down">
+						<button data-popup="#book-room" class="contacts__button book-button octagon octagon_solid">
+							<svg width="120" height="120" viewBox="0 0 192 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M96 0L154.779 19.0983L191.106 69.0983V130.902L154.779 180.902L96 200L37.2215 180.902L0.894348 130.902V69.0983L37.2215 19.0983L96 0Z" fill="#FCD043" />
+							</svg>
+							<div class="octagon__text">Book room</div>
+						</button>
+						<form data-dev data-popup-message="#book-info" action="#" class="contacts__form form-book-room">
+							<div class="contacts__item form-book-room__item">
+								<input data-datepicker readonly id="3" data-required autocomplete="off" name="form[check-out]" placeholder="Check in" class="contacts__input input check-in3">
+							</div>
+							<div class="contacts__item form-book-room__item">
+								<input data-datepicker readonly id="3" data-required autocomplete="off" name="form[check-out]" placeholder="Check out" class="contacts__input input check-out3">
+							</div>
+							<button type="submit" class="contacts__submit rectangle rectangle_dark">Book room</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="page__footer footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__column footer__column_about">
+						<div class="footer__title">About us</div>
+						<div class="footer__text text text_dark">
+							<p>
+								The five-star hotel in a beautiful European city with a modern restaurant, conference-hall, and art-bar.
+							</p>
+						</div>
+					</div>
+					<div class="footer__column">
+						<div class="footer__title">News</div>
+						<div class="footer__text text text_dark">
+							<p>
+								Sign up to our newsletter not to miss exclusive offers and information about the upcoming events.
+							</p>
+						</div>
+						<form data-dev data-popup-message="#news" action="#" class="footer__news-form">
+							<input data-required="email" autocomplete="off" type="text" name="form[]" placeholder="Email" class="footer__input input">
+							<button aria-label="Subscribe to the newsletter" type="submit" class="footer__submit _icon-arrow"></button>
+						</form>
+					</div>
+					<div class="footer__column">
+						<div class="footer__title">Social</div>
+						<ul class="footer__social social">
+							<li class="social__item">
+								<a href="#" class="social__link">Facebook</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link">Instagram</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link">Twitter</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copy">©2021 All rights reserved. BankHotel</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- book-room -->
+	<div id="book-room" aria-hidden="true" class="popup book-room__popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__top">
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="book-room__body">
+					<div class="book-room__title title title_small">Book room</div>
+					<form data-dev data-popup-message="#book-info" action="#" class="book-room__form form-book-room">
+						<div class="book-room__item form-book-room__item">
+							<input data-datepicker readonly id="2" data-required autocomplete="off" name="form[]" placeholder="Check in" class="book-room__input input check-in2">
+						</div>
+						<div class="book-room__item form-book-room__item">
+							<input data-datepicker readonly id="2" data-required autocomplete="off" name="form[]" placeholder="Check out" class="book-room__input input check-out2">
+						</div>
+						<button type="submit" class="book-room__submit">Next</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- book-info -->
+	<div id="book-info" aria-hidden="true" class="book-info__popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content book-info__content">
+				<div class="popup__top">
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="book-info__body">
+					<div class="book-info__title book-confirm__title">Your personal information</div>
+					<form data-dev data-popup-message="#book-confirm" action="#" class="book-info__form">
+						<input data-required autocomplete="off" type="text" name="form[]" placeholder="Your full name..." class="book-info__input input">
+						<input data-required="email" autocomplete="off" type="text" name="form[]" placeholder="Your email..." class="book-info__input input">
+						<input data-required autocomplete="off" type="tel" name="form[]" placeholder="Phone number..." class="book-info__input input">
+						<button type="submit" class="book-confirm__button book-info__button">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- book-confirm -->
+	<div id="book-confirm" aria-hidden="true" class="book-confirm__popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content book-confirm__content">
+				<div class="popup__top">
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="book-confirm__body">
+					<div class="book-confirm__title">We'll contact you ASAP</div>
+					<div class="book-confirm__text text text_dark">Your details were sent to our operator who will contact you ASAP.</div>
+					<button data-close type="button" class="book-confirm__button">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- news -->
+	<div id="news" aria-hidden="true" class="news__popup popup book-confirm">
+		<div class="popup__wrapper">
+			<div class="popup__content book-confirm__content">
+				<div class="popup__top">
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="book-confirm__body">
+					<div class="book-confirm__title">Thank you for subscribing!</div>
+					<div class="book-confirm__text text text_dark">From now on, you’ll be the first to know about our news.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20230824133241"></script>
+	<!-- Стилі для body -->
+
+	<style>
+		.lock body {
+			overflow: hidden;
+			touch-action: none;
+			overscroll-behavior: none;
+		}
+
+		.loading body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.loaded body {
+			transition: opacity 1s ease 0s;
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<div id="fls-preloader">
+
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			html {
+				overflow: hidden;
+				touch-action: none;
+				overscroll-behavior: none;
+			}
+
+			.fls-preloader {
+				pointer-events: none;
+				z-index: -1;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: var(--bg-primary);
+			}
+
+			.fls-preloader__body {
+				padding: 0.93rem;
+				max-width: 30rem;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.fls-preloader__icon {
+				width: 18.75rem;
+				height: 18.75rem;
+				animation-name: circularText;
+				animation-duration: 1s;
+			}
+
+			@media(max-width:87.5rem) {
+				.fls-preloader__icon {
+					width: 13.75rem;
+					height: 13.75rem;
+				}
+			}
+
+			@media(max-width:47.9988rem) {
+				.fls-preloader__icon {
+					width: 8.75rem;
+					height: 8.75rem;
+				}
+			}
+
+			@media(max-width:21.875rem) {
+				.fls-preloader__icon {
+					width: 5.75rem;
+					height: 5.75rem;
+				}
+			}
+		</style>
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				const preloaderTemplate = `
+				<div class="fls-preloader">
+					<div class="fls-preloader__body">
+					<img class="fls-preloader__icon" src="img/homepage/about/icon.svg">
+					</div>
+				</div>`;
+
+				document.querySelector('html').insertAdjacentHTML("beforeend", preloaderTemplate);
+				const preloader = document.querySelector('.fls-preloader');
+				const htmlDocument = document.documentElement;
+
+				htmlDocument.classList.add('loading');
+				htmlDocument.classList.add('lock');
+
+				window.addEventListener('load', addLoadedClass);
+
+				function addLoadedClass() {
+					htmlDocument.classList.add('loaded');
+					htmlDocument.classList.remove('lock');
+					htmlDocument.classList.remove('loading');
+
+					preloaderContainer.classList.add('fls-preloader--loaded');
+
+					setTimeout(() => {
+						preloader.remove();
+						preloaderContainer.remove();
+					}, 400);
+				}
+			}
+			preloader();
+		</script>
+	</div>
+</body>
+
+</html>
