@@ -339,18 +339,19 @@
 				htmlDocument.classList.add('loading');
 				htmlDocument.classList.add('lock');
 
-				window.addEventListener('load', function () {
-					setTimeout(() => {
-						preloader.remove();
-						preloaderContainer.remove();
-						addLoadedClass()
-					}, 500);
-				});
+				window.addEventListener('load', addLoadedClass);
 
 				function addLoadedClass() {
 					htmlDocument.classList.add('loaded');
 					htmlDocument.classList.remove('lock');
 					htmlDocument.classList.remove('loading');
+
+					preloaderContainer.classList.add('fls-preloader--loaded');
+
+					setTimeout(() => {
+						preloader.remove();
+						preloaderContainer.remove();
+					}, 400);
 				}
 			}
 			preloader();
