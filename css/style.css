@@ -1394,12 +1394,6 @@ body::after {
   position: relative;
 }
 
-.hero__image-block._active {
-  -webkit-transition-delay: 0.2s;
-       -o-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-}
-
 .hero__image-block img {
   max-width: 100%;
 }
